@@ -6,4 +6,8 @@ if st.button("Search"):
   elif not name in alpha():
     st.warning("Warning!!!")
   else st.sucess ("Texta e pravilno vaveden")
-
+  age = st.number_input("Enter age")
+  if age < 18:
+    st.error("Ne mojesh da vlizash")
+  else:
+    st.sucsess("Dobre doshul")
